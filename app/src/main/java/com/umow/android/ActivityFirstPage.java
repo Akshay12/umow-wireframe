@@ -119,6 +119,8 @@ public class ActivityFirstPage extends Activity_Base {
             });
         }
 
+
+
     }
     private boolean isEmpty(EditText etText) {
         if (etText.getText().toString().trim().length() > 0) {

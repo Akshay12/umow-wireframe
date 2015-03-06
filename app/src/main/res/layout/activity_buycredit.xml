@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:weightSum="1">
@@ -8,16 +9,30 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Available Credit: 6"
+        android:text="Total available credit: 6"
         android:id="@+id/textView17"
         android:layout_gravity="center_horizontal"
-        android:layout_weight="0.18" />
+        android:layout_weight="0.18"
+        android:layout_above="@+id/Activity_buycredit_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="181dp" />
 
     <Button
+        android:layout_width="236dp"
+        android:layout_height="wrap_content"
+        android:text="Buy more credits"
+        android:id="@+id/Activity_buycredit_button"
+        android:layout_marginBottom="76dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Buy more "
-        android:id="@+id/Activity_buycredit_button"
-        android:layout_gravity="center_horizontal"
-        android:layout_weight="0.18" />
-</LinearLayout>
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Available Credit"
+        android:id="@+id/textView18"
+        android:layout_marginBottom="49dp"
+        android:layout_above="@+id/textView17"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

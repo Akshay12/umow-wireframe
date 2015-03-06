@@ -8,31 +8,11 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Available Credit: 6"
-        android:id="@+id/textView15"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="1234 Evergreen dr."
         android:id="@+id/textView16"
-        android:layout_marginTop="118dp"
-        android:layout_below="@+id/textView15"
-        android:layout_centerHorizontal="true" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:inputType="textMultiLine"
-        android:ems="10"
-        android:id="@+id/editText6"
-        android:text="Notes:"
-        android:layout_centerVertical="true"
+        android:layout_marginTop="90dp"
+        android:layout_below="@+id/activity_setting2_recharge_button"
         android:layout_centerHorizontal="true" />
 
     <Button
@@ -40,12 +20,13 @@
         android:layout_height="wrap_content"
         android:text="Get Mowed"
         android:id="@+id/activity_setting2_button_getmowed"
+        android:layout_marginBottom="67dp"
         android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/editText6"
-        android:layout_alignStart="@+id/editText6"
-        android:layout_marginBottom="55dp"
+        android:layout_alignLeft="@+id/textView16"
+        android:layout_alignStart="@+id/textView16"
         android:layout_alignRight="@+id/textView16"
-        android:layout_alignEnd="@+id/textView16" />
+        android:layout_alignEnd="@+id/textView16"
+        android:textColor="@android:color/white" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -53,8 +34,31 @@
         android:layout_height="wrap_content"
         android:text="ADD"
         android:id="@+id/activity_setting2_recharge_button"
+        android:longClickable="false"
         android:layout_below="@+id/textView15"
         android:layout_toRightOf="@+id/textView16"
-        android:longClickable="false" />
+        android:layout_toEndOf="@+id/textView16"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Available Credit:  6"
+        android:id="@+id/textView15"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/activity_setting2_recharge_button"
+        android:layout_alignEnd="@+id/activity_setting2_recharge_button"
+        android:layout_marginTop="24dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        android:id="@+id/editText6"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:hint="Note" />
 
 </RelativeLayout>
