@@ -19,7 +19,7 @@
         android:inputType="textPersonName"
         android:text="Name"
         android:ems="10"
-        android:id="@+id/editText" />
+        android:id="@+id/setting_name" />
 
     <EditText
         android:layout_width="match_parent"

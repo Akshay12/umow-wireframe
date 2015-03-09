@@ -13,5 +13,10 @@
     <string name="date_button_set">Set Date</string>
     <string name="date_view_set">The Date is: </string>
     <string name="date_selected"></string>
+    <string name="title_activity_intro">intro</string>
+    <string name="title_activity_intro_test">intro_test</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>

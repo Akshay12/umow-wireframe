@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        style="@style/text_body"
+        android:padding="8dp"
+        android:text="uMow currently serving in:"
+        android:id="@+id/uMow_2"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/textsize_large"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="93dp" />
+
+    <TextView
+        style="@style/text_body"
+        android:padding="8dp"
+        android:text="Austin, Tx"
+        android:id="@+id/city"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/textsize_medium"
+        android:layout_below="@+id/uMow_2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        style="@style/text_body"
+        android:padding="8dp"
+        android:text="comming soon:"
+        android:id="@+id/soon"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/textsize_medium"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        style="@style/text_body"
+        android:padding="8dp"
+        android:text="Dallas,Tx"
+        android:id="@+id/dallas"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/textsize_medium"
+        android:layout_below="@+id/soon"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        style="@style/text_body"
+        android:padding="8dp"
+        android:text="Houston, Tx"
+        android:id="@+id/houston"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/textsize_medium"
+        android:layout_below="@+id/dallas"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Join Now"
+        android:id="@+id/join_button"
+        android:layout_marginBottom="32dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

@@ -95,7 +95,7 @@ public class ActivityFirstPage extends Activity_Base {
 
                             // Start an intent for the dispatch activity
                             //Intent intent = new Intent(ActivityFirstPage.this, ActivitySandbox.class);
-                            Intent intent = new Intent(ActivityFirstPage.this, ActivitySetting.class);
+                            Intent intent = new Intent(ActivityFirstPage.this, ActivitySetting2.class);
                             intent.putExtra("Username",temp_user);
                             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
                             startActivity(intent);

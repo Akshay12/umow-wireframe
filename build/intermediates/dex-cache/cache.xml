@@ -2,67 +2,67 @@
 <items version="2" >
 
     <item
-        jar="/Users/julio/Desktop/umow-wireframe/app/libs/Parse-1.7.1.jar"
-        jumboMode="false"
-        revision="21.0.2"
-        sha1="87c45f9f66da531a65f065ee32f603c7e6db1528">
-        <dex dex="/Users/julio/Desktop/umow-wireframe/app/build/intermediates/pre-dexed/debug/Parse-1.7.1-9e1464f7238bd8acdd2e49b0471f6f0ff767431b.jar" />
-    </item>
-    <item
-        jar="/Users/julio/Desktop/umow-wireframe/app/libs/PayPalAndroidSDK-2.7.3.jar"
-        jumboMode="false"
-        revision="21.0.2"
-        sha1="6e9613e40eb3aedfe738fa16e20f8a144896057f">
-        <dex dex="/Users/julio/Desktop/umow-wireframe/app/build/intermediates/pre-dexed/debug/PayPalAndroidSDK-2.7.3-949dd568a437261535560ee74cd88ade7b736c6c.jar" />
-    </item>
-    <item
-        jar="/Users/julio/Desktop/umow-wireframe/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/classes.jar"
-        jumboMode="false"
-        revision="21.0.2"
-        sha1="686344a780033e4ba22b926cd225f8d4941247e6">
-        <dex dex="/Users/julio/Desktop/umow-wireframe/app/build/intermediates/pre-dexed/debug/classes-e99d5048253d592233b4ab8c03ccaa1ba7e4c5b9.jar" />
-    </item>
-    <item
-        jar="/Users/julio/Desktop/umow-wireframe/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.0/libs/internal_impl-21.0.0.jar"
-        jumboMode="false"
-        revision="21.0.2"
-        sha1="1609e6d42d0480b0f4188e2c29f75388fa12a8f0">
-        <dex dex="/Users/julio/Desktop/umow-wireframe/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.0-c057947fc3c08262e8999055ac93246878d98bd7.jar" />
-    </item>
-    <item
-        jar="/Users/julio/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.1.2/91c20388c9a45f62b5ed8fe0502bb76ff6251fc7/bolts-android-1.1.2.jar"
-        jumboMode="false"
-        revision="21.0.2"
-        sha1="91c20388c9a45f62b5ed8fe0502bb76ff6251fc7">
-        <dex dex="/Users/julio/Desktop/umow-wireframe/app/build/intermediates/pre-dexed/debug/bolts-android-1.1.2-4c26605bcc1a7cbbaa5c910684dd97788d67b05a.jar" />
-    </item>
-    <item
-        jar="/Users/julio/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.0/support-annotations-21.0.0.jar"
-        jumboMode="false"
-        revision="21.0.2"
-        sha1="1a578b9607b36266c63d43a4fa0ab5664dbe911e">
-        <dex dex="/Users/julio/Desktop/umow-wireframe/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.0-be06800c6699a026f7802171e737177a18a70523.jar" />
-    </item>
-    <item
-        jar="/Users/julio/Desktop/umow-wireframe/app/build/intermediates/exploded-aar/com.android.support/support-v13/21.0.0/libs/internal_impl-21.0.0.jar"
-        jumboMode="false"
-        revision="21.0.2"
-        sha1="5a8e01742aee890c56fe638ea7c921b91a3fdc62">
-        <dex dex="/Users/julio/Desktop/umow-wireframe/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.0-9c63003f81bac1f7f53f8071ac5462e19218ac1e.jar" />
-    </item>
-    <item
-        jar="/Users/julio/Desktop/umow-wireframe/app/build/intermediates/exploded-aar/com.android.support/support-v13/21.0.0/classes.jar"
-        jumboMode="false"
-        revision="21.0.2"
-        sha1="0c0c19759e5868604a3b4c2c0074ee9404d73c76">
-        <dex dex="/Users/julio/Desktop/umow-wireframe/app/build/intermediates/pre-dexed/debug/classes-f619f5607b5d9486e3244ed3f44b56e96e021b52.jar" />
-    </item>
-    <item
-        jar="/Users/julio/Desktop/umow-wireframe/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/classes.jar"
+        jar="C:\Users\Akshay\Documents\GitHub\umow-wireframe\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.5.87\classes.jar"
         jumboMode="false"
         revision="21.0.2"
         sha1="dd9247ea0fabe8ee479638c4b4a23e93752be256">
-        <dex dex="/Users/julio/Desktop/umow-wireframe/app/build/intermediates/pre-dexed/debug/classes-69aebae94ff800eaacbce8dbcf4257558cdb73fb.jar" />
+        <dex dex="C:\Users\Akshay\Documents\GitHub\umow-wireframe\app\build\intermediates\pre-dexed\debug\classes-da8ad78ec794f672191e8d91ed1b4d74c4329c3b.jar" />
+    </item>
+    <item
+        jar="C:\Users\Akshay\Documents\GitHub\umow-wireframe\app\libs\Parse-1.7.1.jar"
+        jumboMode="false"
+        revision="21.0.2"
+        sha1="87c45f9f66da531a65f065ee32f603c7e6db1528">
+        <dex dex="C:\Users\Akshay\Documents\GitHub\umow-wireframe\app\build\intermediates\pre-dexed\debug\Parse-1.7.1-4f1875d7d24eb73292247cccbe9e7eaabe4e44f9.jar" />
+    </item>
+    <item
+        jar="C:\Users\Akshay\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-android\1.1.2\91c20388c9a45f62b5ed8fe0502bb76ff6251fc7\bolts-android-1.1.2.jar"
+        jumboMode="false"
+        revision="21.0.2"
+        sha1="91c20388c9a45f62b5ed8fe0502bb76ff6251fc7">
+        <dex dex="C:\Users\Akshay\Documents\GitHub\umow-wireframe\app\build\intermediates\pre-dexed\debug\bolts-android-1.1.2-da2391c646f27eb580f5f3f97f2539f41d14cb23.jar" />
+    </item>
+    <item
+        jar="C:\Users\Akshay\Documents\GitHub\umow-wireframe\app\build\intermediates\exploded-aar\com.android.support\support-v13\21.0.0\classes.jar"
+        jumboMode="false"
+        revision="21.0.2"
+        sha1="0c0c19759e5868604a3b4c2c0074ee9404d73c76">
+        <dex dex="C:\Users\Akshay\Documents\GitHub\umow-wireframe\app\build\intermediates\pre-dexed\debug\classes-080c43cb29aa79f9619fd291617983321a0c88b6.jar" />
+    </item>
+    <item
+        jar="C:\Users\Akshay\Documents\GitHub\umow-wireframe\app\build\intermediates\exploded-aar\com.android.support\support-v13\21.0.0\libs\internal_impl-21.0.0.jar"
+        jumboMode="false"
+        revision="21.0.2"
+        sha1="5a8e01742aee890c56fe638ea7c921b91a3fdc62">
+        <dex dex="C:\Users\Akshay\Documents\GitHub\umow-wireframe\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.0-229d6774a5e216a7152bb0a0854a88dc5a030e9c.jar" />
+    </item>
+    <item
+        jar="C:\Users\Akshay\Documents\GitHub\umow-wireframe\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\libs\internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="21.0.2"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="C:\Users\Akshay\Documents\GitHub\umow-wireframe\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.3-8737fab52f1b0b6ac40677185fe514356d5a0562.jar" />
+    </item>
+    <item
+        jar="C:\Users\Akshay\Documents\GitHub\umow-wireframe\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.3\classes.jar"
+        jumboMode="false"
+        revision="21.0.2"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="C:\Users\Akshay\Documents\GitHub\umow-wireframe\app\build\intermediates\pre-dexed\debug\classes-665217136487e33510ae7cc3af025023e0cb2503.jar" />
+    </item>
+    <item
+        jar="C:\Users\Akshay\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.3\support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="21.0.2"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="C:\Users\Akshay\Documents\GitHub\umow-wireframe\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.3-15eab55ed7dd9cbddaf9f6efdf2800186c929662.jar" />
+    </item>
+    <item
+        jar="C:\Users\Akshay\Documents\GitHub\umow-wireframe\app\libs\PayPalAndroidSDK-2.7.3.jar"
+        jumboMode="false"
+        revision="21.0.2"
+        sha1="6e9613e40eb3aedfe738fa16e20f8a144896057f">
+        <dex dex="C:\Users\Akshay\Documents\GitHub\umow-wireframe\app\build\intermediates\pre-dexed\debug\PayPalAndroidSDK-2.7.3-1cf568df2009a6aba4e90b9cf856f5deeaf733ae.jar" />
     </item>
 
 </items>

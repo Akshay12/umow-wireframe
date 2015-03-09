@@ -30,6 +30,17 @@ public class ActivitySetting2 extends Activity_Base {
         }
 
         {
+            ((Button) findViewById(R.id.setting_2_setting)).setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+
+                    Intent intent = new Intent(ActivitySetting2.this, ActivitySetting.class);
+                    startActivity(intent);
+                }
+            });
+        }
+
+        {
 
             ((Button) findViewById(R.id.activity_setting2_button_getmowed)).setOnClickListener(new View.OnClickListener() {
                 @Override

@@ -8,13 +8,11 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.parse.FindCallback;
 import com.parse.ParseException;
 import com.parse.ParseQuery;
 import com.parse.ParseUser;
-import com.umow.android.util.UtilToast;
 
 import java.util.List;
 
@@ -84,7 +82,7 @@ public class ActivityAdmin extends Activity_Base {
                                         String  itemValue    = (String) listView.getItemAtPosition(position);
 
                                         // Show Alert
-                                        UtilToast.showToast(ActivityAdmin.this, "Position :" + itemPosition + "  ListItem : " + itemValue);
+                                        //UtilToast.showToast(ActivityAdmin.this, "Position :" + itemPosition + "  ListItem : " + itemValue);
                                     }
 
                                 });

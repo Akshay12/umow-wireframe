@@ -2,45 +2,35 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.umow.android"
     android:versionCode="2"
-    android:versionName="1.1">
+    android:versionName="1.1" >
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
     //paypal
     <!-- hardware features -->
     <uses-feature
         android:name="android.hardware.camera"
-        android:required="false"/>
+        android:required="false" />
     <uses-feature
         android:name="android.hardware.camera.autofocus"
-        android:required="false"/>
+        android:required="false" />
 
     <!-- for card.io card scanning -->
-    <uses-permission
-        android:name="android.permission.CAMERA"/>
-    <uses-permission
-        android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <!-- for most things, including card.io & paypal -->
-    <uses-permission
-        android:name="android.permission.ACCESS_NETWORK_STATE"/>
-    <uses-permission
-        android:name="android.permission.ACCESS_WIFI_STATE"/>
-    <uses-permission
-        android:name="android.permission.INTERNET"/>
-
-
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
-
-
     <application
-        android:name="com.umow.android.ApplicationUMow"
+        android:name=".ApplicationUMow"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
@@ -50,60 +40,47 @@
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".ActivityFirstPage"
             android:label="Login"
-            android:theme="@android:style/Theme.Holo.Light.NoActionBar"
-            />
-
+            android:theme="@android:style/Theme.Holo.Light.NoActionBar" />
         <activity
             android:name=".ActivityCreateAccount"
-            android:label="Login"/>
-
+            android:label="Login" />
         <activity
             android:name=".ActivityJohn"
-            android:label="John"/>
-
-
+            android:label="John" />
         <activity
             android:name=".ActivitySandbox"
-            android:label="Sandbox"/>
-
+            android:label="Sandbox" />
         <activity
             android:name=".ActivitySearch"
-            android:label="Search"/>
-
+            android:label="Search" />
         <activity
             android:name=".ActivityLandscaper"
-            android:label="Landscaper"/>
-
+            android:label="Landscaper" />
         <activity
             android:name=".ActivityPayment"
-            android:label="Payment"/>
-
+            android:label="Payment" />
         <activity
             android:name=".ActivityAdmin"
-            android:label="Admin"/>
-
+            android:label="Admin" />
         <activity
             android:name=".ActivitySetting"
-            android:label="Intro"/>
-
+            android:label="Intro" />
         <activity
             android:name=".ActivitySetting2"
-            android:label="ActivitySetting2"/>
-
+            android:label="ActivitySetting2" />
         <activity
             android:name=".ActivityBuyCredit"
-            android:label="ActivityBuyCredit"/>
-
-
+            android:label="ActivityBuyCredit" />
         //paypal
-        <service android:name="com.paypal.android.sdk.payments.PayPalService"
+        <service
+            android:name="com.paypal.android.sdk.payments.PayPalService"
             android:exported="false" />
 
         <activity android:name="com.paypal.android.sdk.payments.PaymentActivity" />
@@ -115,19 +92,26 @@
         <activity android:name="com.paypal.android.sdk.payments.FuturePaymentInfoActivity" />
         <activity android:name="com.paypal.android.sdk.payments.PayPalProfileSharingActivity" />
         <activity android:name="com.paypal.android.sdk.payments.ProfileSharingConsentActivity" />
-
         <activity
             android:name="io.card.payment.CardIOActivity"
             android:configChanges="keyboardHidden|orientation" />
         <activity android:name="io.card.payment.DataEntryActivity" />
 
-        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
-
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
             android:value="AIzaSyAEBlFJgDdARluH_Mduhq3ggdQvTH8Ulwc" />
 
-        
+        <activity
+            android:name=".util.intro"
+            android:label="@string/title_activity_intro" >
+        </activity>
+        <activity
+            android:name=".intro_test"
+            android:label="@string/title_activity_intro_test" >
+        </activity>
     </application>
 
 </manifest>

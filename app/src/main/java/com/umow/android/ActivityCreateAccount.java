@@ -1,6 +1,7 @@
 package com.umow.android;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -20,6 +21,7 @@ public class ActivityCreateAccount extends Activity_Base {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        final String temp;
         final EditText etEmail = (EditText) findViewById(R.id.activty_createaccount_et_email);
 
         final EditText etPassword = (EditText) findViewById(R.id.activty_createaccount_et_password);
@@ -29,7 +31,7 @@ public class ActivityCreateAccount extends Activity_Base {
         buttonCreateAccount.setOnClickListener(new View.OnClickListener() {
             @Override public void onClick(View view) {
 
-                String email = etEmail.getText().toString();
+                final String email = etEmail.getText().toString();
                 String password = etPassword.getText().toString();
                 String passwordConfirm = etPasswordConfirm.getText().toString();
 
@@ -52,6 +54,7 @@ public class ActivityCreateAccount extends Activity_Base {
                 progressDialog.setMessage("Creating Account...");
                 progressDialog.show();
 
+
                 user.signUpInBackground(new SignUpCallback() {
                     public void done(ParseException e) {
                         progressDialog.dismiss();
@@ -59,6 +62,10 @@ public class ActivityCreateAccount extends Activity_Base {
                         if (e == null) {
                             // Hooray! Let them use the app now.
                             UtilToast.showToast(ActivityCreateAccount.this, "User created successfully");
+                            Intent intent = new Intent(ActivityCreateAccount.this, ActivitySetting.class);
+                            intent.putExtra("username",email);
+                            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                            startActivity(intent);
                             finish();
                         } else {
                             // Sign up didn't succeed. Look at the ParseException
