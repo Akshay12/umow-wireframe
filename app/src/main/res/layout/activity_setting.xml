@@ -17,7 +17,7 @@
         android:layout_width="286dp"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:hint="Name"
         android:ems="10"
         android:id="@+id/setting_name" />
 
@@ -26,39 +26,32 @@
         android:layout_height="wrap_content"
         android:inputType="textPostalAddress"
         android:ems="10"
-        android:id="@+id/editText2"
-        android:text="Address" />
+        android:id="@+id/address"
+        android:hint="Address" />
 
     <EditText
         android:layout_width="147dp"
         android:layout_height="wrap_content"
         android:inputType="textPostalAddress"
         android:ems="10"
-        android:id="@+id/editText3"
-        android:text="City" />
+        android:id="@+id/City"
+        android:hint="City" />
 
     <EditText
         android:layout_width="146dp"
         android:layout_height="wrap_content"
         android:inputType="number"
         android:ems="10"
-        android:id="@+id/editText4"
-        android:text="Zipcode" />
-
-    <TextView
-        android:layout_width="218dp"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="+  add another address"
-        android:id="@+id/textView14" />
+        android:id="@+id/zipcode"
+        android:hint="Zipcode" />
 
     <EditText
         android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:inputType="phone"
         android:ems="10"
-        android:id="@+id/editText5"
-        android:text="Phone Number" />
+        android:id="@+id/phnumber"
+        android:hint="Phone Number" />
 
     <Button
         android:layout_width="wrap_content"

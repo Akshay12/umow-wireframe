@@ -39,8 +39,15 @@ public class ActivityFirstPage extends Activity_Base {
             buttonJohn.setOnClickListener(onClickListener);
         }*/
 
+        //login
+       /* ParseUser currentUser = ParseUser.getCurrentUser();
+        if(currentUser != null){
+            Intent intent = new Intent(ActivityFirstPage.this, ActivitySetting2.class);
+            startActivity(intent);
 
-
+        }
+        else {
+        */
         UsernameView = (EditText) findViewById(R.id.Activity_firstpage_username);
         PasswordView = (EditText) findViewById(R.id.activity_firstpage_password);
 

@@ -73,6 +73,9 @@
             android:name=".ActivitySetting"
             android:label="Intro" />
         <activity
+            android:name=".Activity_intro"
+            android:label="Intro-first" />
+        <activity
             android:name=".ActivitySetting2"
             android:label="ActivitySetting2" />
         <activity
@@ -104,14 +107,7 @@
             android:name="com.google.android.maps.v2.API_KEY"
             android:value="AIzaSyAEBlFJgDdARluH_Mduhq3ggdQvTH8Ulwc" />
 
-        <activity
-            android:name=".util.intro"
-            android:label="@string/title_activity_intro" >
-        </activity>
-        <activity
-            android:name=".intro_test"
-            android:label="@string/title_activity_intro_test" >
-        </activity>
+
     </application>
 
 </manifest>

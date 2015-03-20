@@ -1,33 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/FragmentA"
+    android:background="@drawable/intro_1"
     >
-
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/imageView"
-        android:src="@drawable/umow"
-        android:layout_above="@+id/into_1_info"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
-    <TextView
-        style="@style/text_body"
-        android:padding="8dp"
-        android:text="Affordable lawn mowing service just a click away"
-        android:id="@+id/into_1_info"
-        android:textColor="@android:color/black"
-        android:textSize="@dimen/textsize_medium"
-        android:layout_marginBottom="146dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Join Now"
         android:id="@+id/join_button"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="48dp"
+        android:background="@android:color/transparent"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 

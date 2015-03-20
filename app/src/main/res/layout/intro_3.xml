@@ -1,37 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:id="@+id/FragmentC"
+    android:background="@drawable/intro_3"
+    android:visibility="visible">
 
-
-    <TextView
-        style="@style/text_body"
-        android:padding="8dp"
-        android:text="Enter your Zip Code"
-        android:id="@+id/zip1"
-        android:textColor="@android:color/black"
-        android:textSize="@dimen/textsize_medium"
-        android:layout_marginTop="125dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
-
-    <TextView
-        style="@style/text_body"
-        android:padding="8dp"
-        android:text="to get an estimated quote"
-        android:id="@+id/zip2"
-        android:textColor="@android:color/black"
-        android:textSize="@dimen/textsize_medium"
-        android:layout_below="@+id/zip1"
-        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Join Now"
         android:id="@+id/join_button"
-        android:layout_marginBottom="32dp"
+        android:layout_marginBottom="46dp"
+        android:background="@android:color/transparent"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignRight="@+id/zipcode"
+        android:layout_alignEnd="@+id/zipcode"
+        android:layout_marginRight="44dp"
+        android:layout_marginEnd="44dp" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -39,7 +24,22 @@
         android:inputType="number"
         android:ems="10"
         android:id="@+id/zipcode"
-        android:layout_below="@+id/zip2"
+        android:layout_marginTop="167dp"
+        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="45"
+        android:textSize="120sp"
+        android:id="@+id/cost"
+        android:background="@android:color/transparent"
+        android:focusable="true"
+        android:layout_below="@+id/zipcode"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:visibility="invisible" />
 
 </RelativeLayout>

@@ -6,8 +6,11 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.DatePicker;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import com.parse.ParseObject;
 import com.parse.ParseUser;
 import com.paypal.android.sdk.payments.PayPalAuthorization;
 import com.paypal.android.sdk.payments.PayPalConfiguration;
@@ -26,30 +29,16 @@ import org.json.JSONException;
 
 import java.math.BigDecimal;
 import java.util.Arrays;
+import java.util.Calendar;
 import java.util.HashSet;
 import java.util.Set;
 
 //date imports
-import java.util.Calendar;
-import android.app.Activity;
-import android.app.DatePickerDialog;
-import android.app.Dialog;
-import android.widget.DatePicker;
-import android.widget.TextView;
-
 //parse imports for request and landscapers
-import com.parse.ParseException;
-import com.parse.ParseACL;
-import com.parse.ParseRole;
-import com.parse.ParseException;
-import com.parse.ParseUser;
-import com.parse.SignUpCallback;
-import com.umow.android.util.UtilToast;
-import com.parse.ParseObject;
 
 
 /**
- * Created by young on 11/25/14.
+ * Created by Akshay on 11/25/14.
  */
 public class ActivityPayment extends Activity {
 
@@ -66,6 +55,8 @@ public class ActivityPayment extends Activity {
     private TextView dateView;
     private int year, month, day;
     String date_Mow;
+    private TextView address1;
+    private TextView notes2;
 
 
 
@@ -85,7 +76,7 @@ public class ActivityPayment extends Activity {
      */
     private static final String CONFIG_ENVIRONMENT = PayPalConfiguration.ENVIRONMENT_PRODUCTION;
 
-    // note that these credentials will differ between live & sandbox environments.
+    // note that these credentials will differ bet ween live & sandbox environments.
     //sandbox client id: AebJuRAR0HcDDHuQ4upw9ZJd09y8sFEhad3Yfd6HMoz9LRj41GKptMvLBdQ5
 
     private static final String CONFIG_CLIENT_ID = "ASrxKBAPC9-ATOHg1Pwn6h5wBW7oGY01Bp8X_w4kOFVGGQOuF3vz5teKjFEj";
@@ -107,21 +98,24 @@ public class ActivityPayment extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_payment);
-
+        Intent i = getIntent();
         //setting date parameters before paypal:
-        dateView = (TextView) findViewById(R.id.textView3);
-        calendar = Calendar.getInstance();
-        year = calendar.get(Calendar.YEAR);
-        month = calendar.get(Calendar.MONTH);
-        day = calendar.get(Calendar.DAY_OF_MONTH);
-        showDate(year, month+1, day);
+        address1 = (TextView) findViewById(R.id.textView4);
+        address1.setText(i.getExtras().get("address").toString());
+        notes2 = (TextView) findViewById(R.id.textView2);
+        notes2.setText(i.getExtras().get("notes").toString());
+      //  calendar = Calendar.getInstance();
+       // year = calendar.get(Calendar.YEAR);
+       // month = calendar.get(Calendar.MONTH);
+      //  day = calendar.get(Calendar.DAY_OF_MONTH);
+      //  showDate(year, month+1, day);
 
         Intent intent = new Intent(this, PayPalService.class);
         intent.putExtra(PayPalService.EXTRA_PAYPAL_CONFIGURATION, config);
         startService(intent);
     }
 
-    // date methods for storing lawn mowing dates currently set at single date appointments:
+   /*  // date methods for storing lawn mowing dates currently set at single date appointments:
     @SuppressWarnings("deprecation")
     public void setDate(View view) {
         showDialog(999);
@@ -150,7 +144,7 @@ public class ActivityPayment extends Activity {
         }
     };
 
-     private void showDate(int year, int month, int day) {
+    private void showDate(int year, int month, int day) {
          dateView.setText(new StringBuilder().append(day).append("/")
                 .append(month).append("/").append(year));
         date_Mow = day +("/")+ month +("/")+year;
@@ -159,15 +153,18 @@ public class ActivityPayment extends Activity {
         // setting parse database for request
            //TODO: need to do the parse database for requests..: probally call method here
 
-    }
+    }*/
 
     private void job(){
+        ParseUser user = new ParseUser();
+        user = ParseUser.getCurrentUser();
         ParseObject requesting = new ParseObject("Requesting");
         String address = getIntent().getExtras().getString("address");
-        String Username = getIntent().getExtras().getString("Username");
-        requesting.put("Date",date_Mow);
+        String Username = user.getUsername().toString();
+        //requesting.put("Date",date_Mow);
         requesting.put("Address",address);
         requesting.put("Username",Username);
+        requesting.put("notes",getIntent().getExtras().get("address").toString());
         requesting.saveInBackground();
 
     }
@@ -198,7 +195,7 @@ public class ActivityPayment extends Activity {
     }
 
     private PayPalPayment getThingToBuy(String paymentIntent) {
-        return new PayPalPayment(new BigDecimal("25"), "USD", "Lawn Mowing",
+        return new PayPalPayment(new BigDecimal("45"), "USD", "Lawn Mowing",
                 paymentIntent);
     }
 

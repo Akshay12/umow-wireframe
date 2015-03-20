@@ -30,10 +30,10 @@ public class ActivitySetting extends Activity_Base {
         ParseUser user = ParseUser.getCurrentUser();
 
         Name_view = (EditText) findViewById(R.id.setting_name);
-        Addressview = (EditText) findViewById(R.id.editText2);
-        zipcodeView = (EditText) findViewById(R.id.editText4);
-        cityView = (EditText) findViewById(R.id.editText3);
-        phoneView = (EditText) findViewById(R.id.editText5);
+        Addressview = (EditText) findViewById(R.id.address);
+        zipcodeView = (EditText) findViewById(R.id.zipcode);
+        cityView = (EditText) findViewById(R.id.City);
+        phoneView = (EditText) findViewById(R.id.phnumber);
 
         //if already registered
         if ((user.has("Name"))){
@@ -93,11 +93,15 @@ public class ActivitySetting extends Activity_Base {
                     user.put("Phonenumber", Integer.valueOf(phoneView.getText().toString()));
                     user.saveInBackground();
 
-
+                    String temp = Addressview.getText().toString();
+                    String address1= temp;
                     Intent intent = new Intent(ActivitySetting.this, ActivitySetting2.class);
+                    intent.putExtra("usr_address",address1);
+
                     startActivity(intent);
                 }
             });
+
         }
 
     }
