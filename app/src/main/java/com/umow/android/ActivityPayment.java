@@ -164,7 +164,7 @@ public class ActivityPayment extends Activity {
         //requesting.put("Date",date_Mow);
         requesting.put("Address",address);
         requesting.put("Username",Username);
-        requesting.put("notes",getIntent().getExtras().get("address").toString());
+        requesting.put("notes",getIntent().getExtras().get("notes").toString());
         requesting.saveInBackground();
 
     }

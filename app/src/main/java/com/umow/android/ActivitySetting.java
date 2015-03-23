@@ -97,7 +97,6 @@ public class ActivitySetting extends Activity_Base {
                     String address1= temp;
                     Intent intent = new Intent(ActivitySetting.this, ActivitySetting2.class);
                     intent.putExtra("usr_address",address1);
-
                     startActivity(intent);
                 }
             });

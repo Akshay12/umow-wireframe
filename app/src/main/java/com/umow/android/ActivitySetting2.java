@@ -25,15 +25,31 @@ public class ActivitySetting2 extends Activity_Base {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+
+
+
+      ParseUser user = ParseUser.getCurrentUser();
+      String  add_temp = user.getString("Address");
+      address = add_temp;
+      address2 = (TextView) findViewById(R.id.textView16);
+      address2.setText(address);
+        /*
         address2 = (TextView) findViewById(R.id.textView16);
         // ADDRESS BULLSHIT PART 1
         Intent i = getIntent();
-        String temp =i.getExtras().get("star_Address").toString();
-        address = temp;
-        address2.setText(temp);
+            String temp =i.getExtras().get("star_Address").toString();
+            String temp2 =i.getExtras().get("usr_address").toString();
 
+        if(temp == null){
+            address = temp2;
+            address2.setText(temp2);
+        }
+        if (temp != null) {
+            address = temp;
+            address2.setText(temp);
 
-
+        }
+        */
         // Notes
         notes = (EditText) findViewById(R.id.editText6);
         notes2= notes.getText().toString();
@@ -137,7 +153,7 @@ public class ActivitySetting2 extends Activity_Base {
             public void onClick(DialogInterface dialog, int which){
 
                 //Toast.makeText(getApplicationContext(), "Scheduled", Toast.LENGTH_SHORT).show();
-                notes2= notes.getText().toString();
+                //notes2= notes.getText().toString();
                 Intent intent = new Intent(ActivitySetting2.this, ActivityPayment.class);
                 intent.putExtra("notes", notes2);
                 intent.putExtra("address",address);

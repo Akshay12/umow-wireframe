@@ -13,22 +13,19 @@
         android:id="@+id/linearLayout">
 
         <EditText
-            style="@style/block"
-            android:layout_margin="8dp"
-            android:hint="Username"
-            android:id="@+id/Activity_firstpage_username"
-            android:textColor="@color/white"
-            android:text="username"/>
-
-        <EditText
-            style="@style/block"
-            android:layout_margin="8dp"
-            android:hint="Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
             android:id="@+id/activity_firstpage_password"
             android:textColor="@color/white"
-            android:visibility="visible"
-            android:password="true"
-            android:text="PASSWORD"/>
+            android:hint="Password"
+            android:layout_above="@+id/linearLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
 
     </LinearLayout>
 
@@ -62,5 +59,17 @@
         android:layout_above="@+id/linearLayout"
         android:layout_centerHorizontal="true"
         android:src="@drawable/umow" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/Activity_firstpage_username"
+        android:textColor="@color/white"
+        android:hint="Email"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>
